@@ -1,5 +1,6 @@
-package bootDemo;
+package face_main.interfaceforall;
 
+import face_main.vo.User;
 import org.springframework.stereotype.Service;
 
 
@@ -9,7 +10,7 @@ public class TestInterFaceImpl implements TestInterFace {
         return 0;
     }
 
-    @Override public User testUser(String username,String password) {
+    @Override public User testUser(String username, String password) {
         return new User(username,password);
     }
 

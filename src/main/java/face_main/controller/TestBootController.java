@@ -1,6 +1,9 @@
-package bootDemo;
+package face_main.controller;
 
 
+
+import face_main.vo.User;
+import face_main.interfaceforall.TestInterFace;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +26,8 @@ public class TestBootController {
     }
 
     @RequestMapping("/get")
-    @ResponseBody User getUser() {
+    @ResponseBody
+    User getUser() {
         return testInterFace.testUser("a","b");
     }
 

@@ -1,11 +1,11 @@
-package bootDemo;
+package face_main.vo;
 
 public class User {
 
     private String username = "a";
     private String password = "b";
 
-    User(String username,String password){
+    public User(String username,String password){
         this.username=username;
         this.password=password;
     }
